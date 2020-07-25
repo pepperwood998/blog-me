@@ -1,0 +1,47 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+
+@tailwind utilities;
+
+:root {
+  --primary-color: #1a202c;
+  --active-color: #008000;
+}
+
+body {
+  font-size: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #373a3c;
+}
+
+svg {
+  width: 2rem;
+  height: auto;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-link {
+  @apply block px-5 py-2 rounded truncate;
+
+  &:hover,
+  &.active {
+    @apply bg-gray-800;
+  }
+}
+
+.nav-tab-link {
+  @apply block truncate px-4 py-2 text-sm text-gray-700 border-b-2 border-transparent;
+  &.active {
+    color: var(--active-color);
+    border-color: var(--active-color);
+  }
+}
