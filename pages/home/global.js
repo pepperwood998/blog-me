@@ -23,7 +23,7 @@ export default function HomeGlobal() {
     <div className="py-5">
       <ul>
         {listArticle.map((a, i) => (
-          <li key={i}>
+          <li className="feed-card-wrapper" key={i}>
             <FeedCard article={{ ...a }} />
           </li>
         ))}

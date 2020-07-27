@@ -45,3 +45,10 @@ svg {
     border-color: var(--active-color);
   }
 }
+
+.feed-card-wrapper {
+  @apply border-b border-gray-300 mb-5;
+  &:last-child {
+    @apply border-none;
+  }
+}

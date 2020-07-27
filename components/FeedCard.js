@@ -22,7 +22,7 @@ export default function FeedCard(props) {
   }
 
   return (
-    <div className="border-b border-gray-300">
+    <article>
       <div className="flex">
         <div className="flex items-center justify-center w-10 h-10 overflow-hidden mr-2">
           <img src="/placeholder.png" className="w-full" />
@@ -66,6 +66,6 @@ export default function FeedCard(props) {
           ))}
         </ul>
       </div>
-    </div>
+    </article>
   );
 }
