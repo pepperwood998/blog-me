@@ -25,7 +25,12 @@ export default function FeedCard(props) {
     <article>
       <div className="flex">
         <div className="flex items-center justify-center w-10 h-10 overflow-hidden mr-2">
-          <img src="/placeholder.png" className="w-full" />
+          <img
+            src="/placeholder.png"
+            className="w-full"
+            title={author.username}
+            alt="Author picture"
+          />
         </div>
         <div className="flex-1">
           <Link href="/profile/username">
@@ -36,7 +41,10 @@ export default function FeedCard(props) {
           </div>
         </div>
         <div className="max-w-xs">
-          <button className="flex items-center border border-gray-500 rounded px-2 py-1 text-sm hover:text-gray-100 hover:bg-gray-700">
+          <button
+            title="favorite"
+            className="flex items-center border border-gray-500 rounded px-2 py-1 text-sm hover:text-gray-100 hover:bg-gray-700"
+          >
             <FavoriteIcon className="w-4 h-4" />
             <span>{article.favoritesCount}</span>
           </button>
