@@ -1,6 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import classNames from "classnames";
 
 function NavLink({
   children,
@@ -10,16 +11,20 @@ function NavLink({
   activeClass = "active"
 }) {
   const router = useRouter();
-  if (
+  const isActive =
     router.pathname.includes(href) ||
-    (Array.isArray(extra) && extra.includes(router.pathname))
-  ) {
-    className += ` ${activeClass}`;
-  }
+    (Array.isArray(extra) && extra.includes(router.pathname));
 
   return (
     <Link href={href} scroll={false}>
-      <a className={className.trim()}>{children}</a>
+      <a
+        className={classNames({
+          [className]: true,
+          [activeClass]: isActive
+        })}
+      >
+        {children}
+      </a>
     </Link>
   );
 }
