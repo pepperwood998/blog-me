@@ -62,18 +62,18 @@ export default function SiteLayout({ children }) {
               </li>
               <li>
                 <NavLink
-                  href="/editor"
+                  href="/sign-in"
                   className="nav-link mt-2 md:mt-0 mx-2 md:ml-2 md:mr-0"
                 >
-                  New Post
+                  Sign In
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  href="/settings"
+                  href="/register"
                   className="nav-link mt-2 md:mt-0 mx-2 md:ml-2 md:mr-0"
                 >
-                  Settings
+                  Register
                 </NavLink>
               </li>
             </ul>
