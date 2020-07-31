@@ -1,3 +1,3 @@
-import { HomeYou } from "./home";
+import { HomeGlobal } from "./home";
 
-export default HomeYou;
+export default HomeGlobal;

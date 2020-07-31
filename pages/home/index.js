@@ -1,4 +1,4 @@
-import HomeYou from "./you";
+import HomeGlobal from "./global";
 
-export { default as HomeYou } from "./you";
-export default HomeYou;
+export { default as HomeGlobal } from "./global";
+export default HomeGlobal;

@@ -14,16 +14,16 @@ export default function HomeLayout({ children }) {
           <div className="border-b border-gray-300 overflow-x-auto scrollbar-none">
             <ul className="flex">
               <li>
-                <NavLink
-                  href="/home/you"
-                  extra={["/", "/home"]}
-                  className="nav-tab-link"
-                >
+                <NavLink href="/home/you" className="nav-tab-link">
                   Your Feed
                 </NavLink>
               </li>
               <li>
-                <NavLink href="/home/global" className="nav-tab-link">
+                <NavLink
+                  href="/home/global"
+                  extra={["/", "/home"]}
+                  className="nav-tab-link"
+                >
                   Global Feed
                 </NavLink>
               </li>
