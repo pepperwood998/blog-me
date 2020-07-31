@@ -33,7 +33,7 @@ export default function FeedCard(props) {
           />
         </div>
         <div className="flex-1">
-          <Link href="/profile/username">
+          <Link href={`/profile/${author.username}`}>
             <a className="hover:underline">{author.username}</a>
           </Link>
           <div>

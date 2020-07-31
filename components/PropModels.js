@@ -1,14 +1,14 @@
 import PropTypes from "prop-types";
 
 export const ProfileModel = {
-  id: PropTypes.string,
+  id: PropTypes.number,
   username: PropTypes.string,
   bio: PropTypes.string,
   image: PropTypes.string
 };
 
 export const ArticleModel = {
-  id: PropTypes.string,
+  id: PropTypes.number,
   slug: PropTypes.string,
   title: PropTypes.string,
   slug: PropTypes.string,
