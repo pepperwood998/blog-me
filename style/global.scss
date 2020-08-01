@@ -7,7 +7,6 @@
 
 :root {
   --primary-color: #1a202c;
-  --active-color: #008000;
 }
 
 body {
@@ -20,6 +19,10 @@ body {
 svg {
   width: 2rem;
   height: auto;
+}
+
+form input {
+  @apply mb-4;
 }
 
 .scrollbar-none {
@@ -41,8 +44,7 @@ svg {
 .nav-tab-link {
   @apply block truncate px-4 py-2 text-sm text-gray-700 border-b-2 border-transparent;
   &.active {
-    color: var(--active-color);
-    border-color: var(--active-color);
+    @apply text-green-500 border-green-500;
   }
 }
 
@@ -50,5 +52,12 @@ svg {
   @apply border-b border-gray-300 mb-5;
   &:last-child {
     @apply border-none;
+  }
+}
+
+.input-text {
+  @apply shadow-xs border rounded w-full py-3 px-6 text-gray-700 text-xl leading-5;
+  &:focus {
+    @apply outline-none shadow-outline;
   }
 }
