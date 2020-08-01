@@ -40,14 +40,14 @@ export default function HomeLayout({ children }) {
         <div>{children}</div>
       </div>
       <div className="w-full px-3 py-4 md:py-0 md:w-1/4">
-        <div className="bg-gray-200 p-3 rounded">
+        <div className="bg-primary-200 p-3 rounded">
           <h4 className="text-sm text-gray-700 mb-2">Popular Tags</h4>
           <div>
             <ul className="flex flex-wrap">
               {tags.map((t, i) => (
                 <li key={i} className="mr-1 mb-1 max-w-full">
                   <Link href={`/home/tag?values=${t}`}>
-                    <a className="block px-2 py-1 truncate bg-gray-600 text-gray-100 text-xs rounded-full hover:bg-gray-700">
+                    <a className="block px-2 py-1 truncate bg-primary-600 text-gray-100 text-xs rounded-full hover:bg-primary-700">
                       {t}
                     </a>
                   </Link>

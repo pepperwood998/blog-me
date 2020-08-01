@@ -20,7 +20,7 @@ export default function SiteLayout({ children }) {
         <title>Title</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className="bg-gray-900 text-white sticky top-0">
+      <nav className="bg-primary-900 text-white sticky top-0">
         <div className="md:flex md:justify-between container">
           <div className="flex items-center justify-between">
             <a href="/" title="Conduit" className="flex items-center px-4 py-3">

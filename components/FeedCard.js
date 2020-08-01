@@ -43,7 +43,7 @@ export default function FeedCard(props) {
         <div className="max-w-xs">
           <button
             title="favorite"
-            className="flex items-center border border-gray-500 rounded px-2 py-1 text-sm hover:text-gray-100 hover:bg-gray-700"
+            className="flex items-center border border-gray-500 rounded px-2 py-1 text-sm hover:text-gray-100 hover:bg-primary-700"
           >
             <FavoriteIcon className="w-4 h-4" />
             <span>{article.favoritesCount}</span>
