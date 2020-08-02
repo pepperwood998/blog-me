@@ -62,7 +62,7 @@ export default function SiteLayout({ children }) {
               </li>
               <li>
                 <NavLink
-                  href="/sign-in"
+                  href="/signin"
                   className="nav-link mt-2 md:mt-0 mx-2 md:ml-2 md:mr-0"
                 >
                   Sign In
