@@ -29,6 +29,7 @@ module.exports = {
       ...theme("colors"),
       "theme-500": "#48bb78",
       "primary-400": "#718096",
+      "primary-600": "#cbd5e0",
       "primary-700": "#e2e8f0"
     })
   },

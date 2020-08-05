@@ -59,7 +59,7 @@ export default function FeedCard(props) {
         <p className="text-sm text-primary-300 mb-4">{article.description}</p>
         <div className="float-left mb-2">
           <Link href="/article/slug">
-            <a className="text-xs text-primary-500 hover:text-gray-700">
+            <a className="text-xs text-primary-500 hover:text-primary-300">
               Read more...
             </a>
           </Link>
