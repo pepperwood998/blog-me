@@ -37,7 +37,7 @@ export default function Register() {
           />
           <button
             type="submit"
-            className="float-right px-6 py-3 rounded text-lg bg-green-500 hover:bg-green-600 focus:bg-green-700 text-white focus:outline-none"
+            className="float-right px-6 py-3 rounded text-lg bg-theme-500 hover:bg-theme-600 focus:bg-theme-700 text-white focus:outline-none"
           >
             Register
           </button>
