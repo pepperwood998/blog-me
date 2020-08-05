@@ -27,7 +27,9 @@ module.exports = {
     }),
     borderColor: theme => ({
       ...theme("colors"),
-      "theme-500": "#48bb78"
+      "theme-500": "#48bb78",
+      "primary-400": "#718096",
+      "primary-700": "#e2e8f0"
     })
   },
   variants: {},

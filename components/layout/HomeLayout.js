@@ -11,7 +11,7 @@ export default function HomeLayout({ children }) {
     <div className="home-page md:flex ">
       <div className="w-full md:w-9/12 pr-0 md:pr-8">
         <nav>
-          <div className="border-b border-gray-300 overflow-x-auto scrollbar-none">
+          <div className="border-b border-primary-700 overflow-x-auto scrollbar-none">
             <ul className="flex">
               <li>
                 <NavLink href="/home/you" className="nav-tab-link">
