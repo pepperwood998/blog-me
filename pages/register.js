@@ -9,7 +9,7 @@ export default function Register() {
           Already have an account?
         </a>
       </Link>
-      <form className="w-full px-10 md:w-1/2">
+      <form className="w-full px-10 mb-8 md:w-1/2">
         <fieldset>
           <input
             type="text"
