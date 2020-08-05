@@ -20,17 +20,21 @@ export default function SiteLayout({ children }) {
         <title>Title</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className="bg-primary-900 text-white sticky top-0">
+      <nav className="bg-primary-900 text-primary-900 sticky top-0">
         <div className="md:flex md:justify-between container">
           <div className="flex items-center justify-between">
-            <a href="/" title="Conduit" className="flex items-center px-4 py-3">
+            <a
+              href="/"
+              title="Conduit"
+              className="flex items-center px-4 py-3"
+            >
               <TailwindIcon className="w-8 h-8 mr-2" />
               <span>Conduit</span>
             </a>
             <div className="md:hidden">
               <button
                 onClick={handleToggle}
-                className="block px-4 py-2 text-gray-500 hover:text-white focus:text-white focus:outline-none"
+                className="block px-4 py-2 text-primary-500 hover:text-primary-900 focus:text-primary-900 focus:outline-none"
               >
                 <Switch param={isOpen}>
                   <Case value={true}>
@@ -46,8 +50,8 @@ export default function SiteLayout({ children }) {
           <div
             className={classNames({
               "pb-4 md:flex md:items-center md:pb-0": true,
-              block: isOpen,
-              hidden: !isOpen
+              "block": isOpen,
+              "hidden": !isOpen
             })}
           >
             <ul className="md:flex">

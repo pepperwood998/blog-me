@@ -37,13 +37,13 @@ export default function FeedCard(props) {
             <a className="hover:underline">{author.username}</a>
           </Link>
           <div>
-            <span className="text-sm text-gray-500">{article.createdAt}</span>
+            <span className="text-sm text-primary-500">{article.createdAt}</span>
           </div>
         </div>
         <div className="max-w-xs">
           <button
             title="favorite"
-            className="flex items-center border border-gray-500 rounded px-2 py-1 text-sm hover:text-gray-100 hover:bg-primary-700"
+            className="flex items-center border rounded px-2 py-1 text-sm hover:text-primary-900 hover:bg-primary-700"
           >
             <FavoriteIcon className="w-4 h-4" />
             <span>{article.favoritesCount}</span>
@@ -56,10 +56,10 @@ export default function FeedCard(props) {
             <a>{article.title}</a>
           </Link>
         </h3>
-        <p className="text-sm text-gray-700 mb-4">{article.description}</p>
+        <p className="text-sm text-primary-300 mb-4">{article.description}</p>
         <div className="float-left mb-2">
           <Link href="/article/slug">
-            <a className="text-xs text-gray-500 hover:text-gray-700">
+            <a className="text-xs text-primary-500 hover:text-gray-700">
               Read more...
             </a>
           </Link>
@@ -67,7 +67,7 @@ export default function FeedCard(props) {
         <ul className="float-right flex flex-wrap">
           {tagList.map((t, i) => (
             <li className="mr-1 mb-1" key={i}>
-              <span className="border py-1 px-2 truncate cursor-default border-gray-500 rounded-full text-xs text-gray-700">
+              <span className="border py-1 px-2 truncate cursor-default rounded-full text-xs text-primary-300">
                 {t}
               </span>
             </li>

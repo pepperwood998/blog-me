@@ -5,7 +5,7 @@ export default function Register() {
     <div className="flex flex-col items-center">
       <h2 className="text-4xl font-bold">Register</h2>
       <Link href="/login">
-        <a className="mb-8 text-sm text-green-500 hover:underline">
+        <a className="mb-8 text-sm text-theme-500 hover:underline">
           Already have an account?
         </a>
       </Link>
@@ -37,7 +37,7 @@ export default function Register() {
           />
           <button
             type="submit"
-            className="float-right px-6 py-3 rounded text-lg bg-theme-500 hover:bg-theme-600 focus:bg-theme-700 text-white focus:outline-none"
+            className="float-right px-6 py-3 rounded text-lg bg-theme-500 hover:bg-theme-600 focus:bg-theme-700 text-primary-900 focus:outline-none"
           >
             Register
           </button>

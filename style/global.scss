@@ -13,8 +13,7 @@ body {
   font-size: 1rem;
   font-family: sans-serif;
   line-height: 1.5;
-  color: #373a3c;
-  @apply bg-primary;
+  @apply bg-primary text-primary-200;
 }
 
 svg {
@@ -43,9 +42,9 @@ form input {
 }
 
 .nav-tab-link {
-  @apply block truncate px-4 py-2 text-sm text-gray-700 border-b-2 border-transparent;
+  @apply block truncate px-4 py-2 text-sm text-primary-300 border-b-2 border-transparent;
   &.active {
-    @apply text-green-500 border-green-500;
+    @apply text-theme-500 border-theme-500;
   }
 }
 
@@ -57,8 +56,8 @@ form input {
 }
 
 .input-text {
-  @apply shadow-xs border rounded w-full py-3 px-6 text-gray-700 text-xl leading-5;
+  @apply shadow-lg border border-gray-600 rounded w-full py-3 px-6 text-primary-300 text-xl leading-5;
   &:focus {
-    @apply outline-none shadow-outline;
+    @apply outline-none shadow-outline border-transparent;
   }
 }
