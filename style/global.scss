@@ -61,6 +61,7 @@ form input {
     @apply outline-none shadow-outline;
   }
   &.error {
+    box-shadow: 0 0 10px 2px #fc8181;
     @apply border-red-400;
   }
 }
