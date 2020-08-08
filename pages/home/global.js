@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import FeedCard from "../../components/FeedCard";
-import useFetchListArticle from "../../components/hook/useFetchListArticle";
+import useFetchListArticle from "../../lib/hook/useFetchListArticle";
 import { getLayout } from "../../components/layout/HomeLayout";
 import { Case, Default, Switch } from "../../components/react-switch";
 

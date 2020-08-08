@@ -33,6 +33,8 @@ module.exports = {
       "primary-700": "#e2e8f0"
     })
   },
-  variants: {},
+  variants: {
+    backgroundColor: ["responsive", "hover", "focus", "active"]
+  },
   plugins: []
 };

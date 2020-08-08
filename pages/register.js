@@ -1,14 +1,29 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import Link from "next/link";
 import classNames from "classnames";
+import UserAPI from "../lib/api/user";
+import { Switch, Default, Case } from "../components/react-switch";
 
 export default function Register() {
-  const { register, handleSubmit, errors, watch } = useForm();
+  const { register, handleSubmit, errors, watch, reset } = useForm();
+  const [loading, setLoading] = useState(false);
+  const [serverError, setServerError] = useState("");
   const password = useRef({});
   password.current = watch("password", "");
-  const onSubmit = data => {
-    console.log(data);
+  const onSubmit = async ({ username, email, password }) => {
+    setLoading(true);
+    setServerError("");
+    const { data, error } = await UserAPI.register(username, email, password);
+    setLoading(false);
+    if (error) {
+      setServerError(error.message);
+      return;
+    }
+    if (data.user) {
+      reset({});
+      console.log(data.user);
+    }
   };
 
   return (
@@ -68,10 +83,15 @@ export default function Register() {
               "error": errors.cfPassword
             })}
           />
-          <button
-            type="submit"
-            className="float-right px-6 py-3 rounded text-lg bg-theme-500 hover:bg-theme-600 focus:bg-theme-700 text-primary-900 focus:outline-none"
-          >
+          <Switch param={serverError !== ""}>
+            <Case value={true}>
+              <div>
+                <p>{serverError}</p>
+              </div>
+            </Case>
+            <Default>{""}</Default>
+          </Switch>
+          <button type="submit" className="btn-primary" disabled={loading}>
             Register
           </button>
         </fieldset>
