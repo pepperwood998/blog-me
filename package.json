@@ -11,7 +11,7 @@
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "@svgr/webpack": "^5.4.0",
     "autoprefixer": "^9.8.5",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "next": "9.4.4",
     "react": "16.13.1",
